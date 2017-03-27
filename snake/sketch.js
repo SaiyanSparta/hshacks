@@ -32,7 +32,7 @@ function draw() {
 }
 
 function keyPressed() {
-	if (keyCode === UP_ARROW && pDir !== "DOWN") {
+	if (keyCode === UP_ARROW && pDir !== "DOWN") { //fixes going back
 		pDir = "UP";
 		s.dir(0, -1); 
 	}else if (keyCode === DOWN_ARROW && pDir != "UP") {
